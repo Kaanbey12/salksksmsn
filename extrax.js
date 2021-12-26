@@ -46,7 +46,7 @@ bot.interactionCommand({
   name:"iptal",
   prototype:"button",
   code:`
-  $clear[3]
+ Kayıt İptal Edildi
   `})
 
 bot.variables({
