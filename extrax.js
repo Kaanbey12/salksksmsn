@@ -33,19 +33,19 @@ bot.interactionCommand({
   name:"erkek",
   prototype:"button",
   code:`
-  Test
+  $interactionReply[twst]
   `})
 bot.interactionCommand({
   name:"kız",
   prototype:"button",
   code:`
-  Test
+  $interactionReply[Test]
   `})
 bot.interactionCommand({
   name:"iptal",
   prototype:"button",
   code:`
-  Test
+  $interactionReply[Test]
   `})
 
 bot.variables({
