@@ -34,7 +34,9 @@ bot.interactionCommand({
   name:"erkek",
   prototype:"button",
   code:`
-  $interactionReply[twst]
+  $interactionReply[<@$getServerVar[kayıtyapılan] Kaydı Yapılan Kişinin <@$authorID> Tarafından Kaydı Sonuçlandırıldı]
+  $giveRoles[$getServerVar[kayıtyapılan];$getServerVar[erkek]]
+  $changeUserName[
   `})
 bot.interactionCommand({
   name:"kız",
