@@ -18,10 +18,3 @@ $log[$userTag[$clientID] ismi ile giriş yapıldı]`
 }) 
 
 
-bot.command({
-  name:"$alwaysExecute",
-  code:`
-  $setServerVar[$sum[$getServerVar[rank;$authorID];1];$authorID]
-  $onlyIf[$getServerVar[rank;$authorID]==$getServerVar[level];
-  `
-  })
