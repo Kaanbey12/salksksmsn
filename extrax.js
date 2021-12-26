@@ -8,6 +8,7 @@ const bot = new extrax.Bot({
 bot.loadCommands('./komutlar/');
 
 bot.onMessage();
+bot.onInteractionCreate();
 
 
 bot.readyCommand({ 
@@ -28,8 +29,24 @@ bot.command({
   $onlyIf[$mentioned[1]!=;{color:$getServerVar[hex]}{description:$customEmoji[yasak] | Lütfen Birini Etiketle!}]
   `
   })
-
-
+bot.interactionCommand({
+  name:"erkek",
+  prototype:"button",
+  code:`
+  Test
+  `})
+bot.interactionCommand({
+  name:"kız",
+  prototype:"button",
+  code:`
+  Test
+  `})
+bot.interactionCommand({
+  name:"iptal",
+  prototype:"button",
+  code:`
+  Test
+  `})
 
 bot.variables({
   kayıtisimyaş:"",
