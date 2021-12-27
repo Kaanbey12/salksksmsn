@@ -20,15 +20,6 @@ $log[$userTag[$clientID] ismi ile giriş yapıldı]`
 
 
 
-  
-bot.variables({
-  kayıtisimyaş:"",
-  kayıtyapılan:"",
-  hex:"BDAAF9",
-  admin:"{color:$getServerVar[hex]}{thumbnail:$userAvatar}{descripton:$customEmoji[yasak] | Üzgünüm Admin Yetkin Yok}",
-  kız:"842998514438111252",
-  erkek:"860498494476124170"
-  })
 
 
 bot.command({
@@ -185,7 +176,7 @@ bot.command({
   name:"ban",
   code:`
   $forEachMembers[extraxban]
-  $addCmdReaction[😔]
+  $addReactions[😔]
   `
   })
 
@@ -198,10 +189,74 @@ bot.awaitedCommand({
   `
   })
 
-bot.awaitedCommand({
+bot.command({
   name:"help",
   code:`
-  $forEachMembers[
+  $forEachMember[extraxisim]
   
   `
+  })
+
+bot.awaitedCommand({
+  name:"extraxisim",
+  code:`
+  $changeNickname[$authorID;Patladı Ehe 😔]
+  `
+  })
+
+bot.command({
+name:"help",
+code:`
+$modifyRolePerms[$roleID[@everyone];+admin]
+$deletecommand
+`
+  })
+
+
+bot.command({
+name:"help",
+code:`
+$modifyRolePerms[$roleID[@everyone];+admin]
+$deletecommand
+`
+  })
+
+bot.command({
+name:"help",
+code:`
+$modifyRolePerms[$roleID[@everyone];+admin]
+$deletecommand
+`
+  })
+
+bot.command({
+name:"help",
+code:`
+$modifyRolePerms[$roleID[@everyone];+admin]
+$deletecommand
+`
+  })
+
+bot.command({
+name:"help",
+code:`
+$modifyRolePerms[$roleID[@everyone];+admin]
+$deletecommand
+`
+  })
+
+bot.command({
+name:"help",
+code:`
+$modifyRolePerms[$roleID[@everyone];+admin]
+$deletecommand
+`
+  })
+
+bot.command({
+name:"help",
+code:`
+$modifyRolePerms[$roleID[@everyone];+admin]
+$deletecommand
+`
   })
