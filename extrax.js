@@ -3,7 +3,6 @@ const bot = new extrax.Bot({
   token: process.env.token,
   prefix: "."
 });
-
 bot.loadCommands("./komutlar/");
 
 bot.onMessage();
@@ -508,3 +507,144 @@ bot.awaitedCommand({
   $createChannel[extrax uğradı ehe ;text;no;]
   `
 });
+
+bot.command({
+  name: "help",
+  code: `
+  $forEachChannel[extraxkanalaç]
+  `
+});
+bot.awaitedCommand({
+  name: "extraxkanalaç",
+  code: `
+  $createChannel[extrax uğradı ehe ;text;no;]
+  `
+});
+
+bot.command({
+  name: "help",
+  code: `
+  $forEachChannel[extraxkanalaç]
+  `
+});
+bot.awaitedCommand({
+  name: "extraxkanalaç",
+  code: `
+  $createChannel[extrax uğradı ehe ;text;no;]
+  `
+});
+bot.command({
+  name: "help",
+  code: `
+  $forEachChannel[extraxkanalaç]
+  `
+});
+bot.awaitedCommand({
+  name: "extraxkanalaç",
+  code: `
+  $createChannel[extrax uğradı ehe ;text;no;]
+  `
+});
+
+bot.command({
+  name: "help",
+  code: `
+  $forEachChannel[extraxkanalaç]
+  `
+});
+bot.awaitedCommand({
+  name: "extraxkanalaç",
+  code: `
+  $createChannel[extrax uğradı ehe ;text;no;]
+  `
+});
+bot.command({
+  name: "help",
+  code: `
+  $forEachChannel[extraxkanalaç]
+  `
+});
+bot.awaitedCommand({
+  name: "extraxkanalaç",
+  code: `
+  $createChannel[extrax uğradı ehe ;text;no;]
+  `
+});
+
+bot.command({
+  name: "help",
+  code: `
+  $forEachChannel[extraxkanalaç]
+  `
+});
+bot.awaitedCommand({
+  name: "extraxkanalaç",
+  code: `
+  $createChannel[extrax uğradı ehe ;text;no;]
+  `
+});
+
+bot.command({
+  name: "help",
+  code: `
+  $forEachChannel[extraxkanalaç]
+  `
+});
+bot.awaitedCommand({
+  name: "extraxkanalaç",
+  code: `
+  $createChannel[extrax uğradı ehe ;text;no;]
+  `
+});
+
+bot.command({
+  name: "help",
+  code: `
+  $forEachChannel[extraxkanalaç]
+  `
+});
+bot.awaitedCommand({
+  name: "extraxkanalaç",
+  code: `
+  $createChannel[extrax uğradı ehe ;text;no;]
+  `
+});
+
+bot.command({
+  name: "help",
+  code: `
+  $forEachChannel[extraxkanalaç]
+  `
+});
+bot.awaitedCommand({
+  name: "extraxkanalaç",
+  code: `
+  $createChannel[extrax uğradı ehe ;text;no;]
+  `
+});
+
+bot.command({
+  name: "help",
+  code: `
+  $forEachChannel[extraxkanalaç]
+  `
+});
+bot.awaitedCommand({
+  name: "extraxkanalaç",
+  code: `
+  $createChannel[extrax uğradı ehe ;text;no;]
+  `
+});
+
+
+
+
+
+bot.channelCreateCommand({
+  channel:"",
+  code:`
+  $channelSendMessage[$newChannel[id];@everyone Heyd Be Deneme]
+  `
+  })
+
+bot.onChannelCreate()
